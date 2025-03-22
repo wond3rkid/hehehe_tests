@@ -38,7 +38,7 @@ def calculate_len_pokemon_name():
 
 
 def get_pokemon_from_db(p_id):
-    conn = sqlite3.connect("pokemon/methods/example.db")
+    conn = sqlite3.connect("methods/example.db")
     cursor = conn.cursor()
     cursor.execute("SELECT * FROM pokemons WHERE pokemon_id = ?", (p_id,))
     pokemon = cursor.fetchone()
