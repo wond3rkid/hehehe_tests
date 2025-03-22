@@ -1,7 +1,7 @@
 import requests
 
 base_url = 'https://europe.api.riotgames.com'
-riot_api_key = 'RGAPI-d5f6f048-a42a-4451-bb18-272da869e0f8'
+riot_api_key = 'RGAPI-724c11c2-8d59-4ea1-b159-a0d2d1c3d3d0'
 
 
 class TestRiotAPI:
@@ -21,7 +21,7 @@ class TestRiotAPI:
 
         assert response.status_code == 200
         puuid = response.json()['puuid']
-        assert puuid == '-OS_Gch3BD4fGLaumoTkHh-gy4F9WpxaW27HSxsnwToVoaKjbUJpRhAKRayKP9cROjHe55CWK0y0Jg'
+        assert puuid == 'KyxS1-8wikPPJtcqHq71TiBeeb6_t6mVXyfXWRD1U_5tC7gGc6tYzuQ6Hd7RkJf7uAWvLmSIOyvcrw'
         assert response.json()['gameName'] == game_name
         assert response.json()['tagLine'] == str(tag_line)
         print(f'response for first request {response.json()}')

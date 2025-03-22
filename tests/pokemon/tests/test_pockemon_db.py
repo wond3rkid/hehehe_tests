@@ -1,4 +1,5 @@
-from pokemon.methods.work_pokemon import *
+import sqlite3
+from tests.pokemon.methods.work_pokemon import get_pokemon_from_db
 
 
 class TestPokemonDB:

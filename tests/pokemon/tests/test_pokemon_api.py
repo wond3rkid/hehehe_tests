@@ -1,4 +1,4 @@
-from pokemon.methods.work_pokemon import *
+from tests.pokemon.methods.work_pokemon import get_pokemon_info
 
 
 class TestPokemonApi:
