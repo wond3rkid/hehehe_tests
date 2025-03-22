@@ -13,7 +13,7 @@ class TestPokemonDB:
         mock_cursor.fetchone.return_value = pokemon_data
         pokemon = get_pokemon_from_db(25)
 
-        sqlite3.connect.assert_called_once_with("pokemon/methods/example.db")
+        sqlite3.connect.assert_called_once_with("methods/example.db")
         mock_conn.cursor.assert_called_once()
 
         mock_cursor.execute.assert_called_once_with(
